@@ -1,0 +1,81 @@
+/* 1. Selector Elemen */
+body {
+    font-family: Arial, sans-serif;
+    /* Syarat Format Warna 1: RGB */
+    background-color: rgb(240, 248, 255);
+    text-align: center;
+}
+
+/* 2. Selector ID (Syarat Box Model Utama di Tengah Halaman) */
+#kotak-utama {
+    width: 480px;
+    margin: 40px auto; /* Membuat kotak di tengah */
+    padding: 30px;
+    /* Syarat Format Warna 2: Nama Warna */
+    background-color: white;
+    /* Syarat Format Warna 3: HEX */
+    border: 2px solid #cbd5e1;
+    border-radius: 15px;
+}
+
+/* KODE UNTUK BINGKAI LINGKARAN FOTO PROFIL */
+.foto-profil {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%; /* Membuat foto menjadi lingkaran sempurna */
+    object-fit: cover;
+    border: 4px solid #1e3a8a;
+}
+
+/* 3. Selector Class & Pengaturan Teks */
+.nama {
+    font-size: 26px;
+    text-transform: uppercase; /* Membuat teks jadi huruf kapital */
+    color: #1e3a8a;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+/* 4. Selector Turunan (Descendant) */
+#kotak-utama .deskripsi {
+    font-size: 15px;
+    /* Syarat Format Warna 4: RGBA */
+    color: rgba(100, 116, 139, 1);
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+/* 5. Selector Grup */
+h2, .area-keahlian {
+    margin-bottom: 15px;
+    color: #334155;
+    font-size: 18px;
+}
+
+/* Syarat Display: inline-block ke-1 (Label Keahlian dengan Emoji) */
+.label-skill {
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px 12px;
+    color: #475569;
+    font-weight: bold;
+}
+
+/* Syarat Display: inline-block ke-2 (Tombol Sosial Media) */
+.btn-sosmed {
+    display: inline-block;
+    padding: 8px 18px;
+    margin: 6px;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Pewarnaan Khusus Masing-masing Tombol Kontak */
+.ig { background-color: #E1306C; }
+.email { background-color: #D44638; }
+.wa { background-color: #25D366; }
+.yt { background-color: #FF0000; }
+.gh { background-color: #24292f; }
